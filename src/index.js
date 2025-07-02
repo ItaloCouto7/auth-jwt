@@ -43,6 +43,6 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 
 sequelize.sync().then(() => {
-  console.log('📦 Banco conectado e sincronizado!');
-  app.listen(3000, () => console.log('🚀 Server rodando em http://localhost:3000'));
+  console.log('Banco conectado e sincronizado');
+  app.listen(3000, () => console.log('Server rodando em http://localhost:3000'));
 });
